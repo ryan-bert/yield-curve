@@ -22,3 +22,10 @@ conn <- dbConnect(
 
 # Load the data from the database
 bonds_df <- dbGetQuery(conn, "SELECT * FROM bonds")
+
+# Load yield curve function
+source(file.path(current_dir, "functions/plot_yield_curve.R"))
+
+# Plot the yield curve
+plot <- plot_yield_curve(bonds_df, "2004-11-21")
+print(plot)

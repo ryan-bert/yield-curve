@@ -48,8 +48,7 @@ plot_yield_curve <- function(yields_df, date) {
       x = "Years to Maturity",
       y = "Yield (%)",
       color = "Date"
-    ) +
-    theme_minimal()
+    )
 
   return(plot)
 }

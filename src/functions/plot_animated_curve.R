@@ -34,8 +34,8 @@ plot_yield_curve_animated <- function(yields_df, start_date, end_date) {
       y = "Yield (%)"
     ) +
     theme_minimal() +
-    transition_states(Date, transition_length = 2, state_length = 1) +  # Show only the current date's curve
-    ease_aes('linear')
+    transition_states(Date, transition_length = 2, state_length = 1) +
+    ease_aes("linear")
 
   return(plot)
 }

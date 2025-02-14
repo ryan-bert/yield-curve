@@ -27,7 +27,7 @@ bonds_df <- dbGetQuery(conn, "SELECT * FROM bonds")
 source(file.path(current_dir, "functions/plot_yield_curve.R"))
 
 # Plot the yield curve
-plot_yield_curve(bonds_df, "2004-11-21")
+plot_yield_curve(bonds_df, "2008-11-21")
 ggsave(
   file.path(current_dir, "../plots/yield_curve.png"),
   width = 8, height = 6

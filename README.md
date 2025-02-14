@@ -4,6 +4,19 @@ This repository contains functions to visualize the yield curve using R. It incl
 
 ## Contents
 
+```
+yield-curve
+├── README.md
+├── plots
+│   ├── yield_curve.png
+│   └── yield_curve_animation.gif
+└── src
+    ├── functions
+    │   ├── plot_animated_curve.R
+    │   └── plot_yield_curve.R
+    └── main.R
+```
+
 - **Static Yield Curve Plot** (`plot_yield_curve.R`)
   - Plots the yield curve for a selected date and three prior dates (1-month, 2-month, and 3-month before the selected date).
   - The curve is plotted against the time to maturity in years.

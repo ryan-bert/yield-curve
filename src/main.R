@@ -22,4 +22,3 @@ conn <- dbConnect(
 
 # Load the data from the database
 bonds_df <- dbGetQuery(conn, "SELECT * FROM bonds")
-
